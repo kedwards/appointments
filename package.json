@@ -4,7 +4,8 @@
     "description": "An appointment app",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest --watch",
+        "build": "webpack"
     },
     "repository": {
         "type": "git",
@@ -21,7 +22,10 @@
         "@babel/plugin-transform-runtime": "^7.6.2",
         "@babel/preset-env": "^7.6.3",
         "@babel/preset-react": "^7.6.3",
-        "jest": "^24.9.0"
+        "babel-loader": "^8.0.6",
+        "jest": "^24.9.0",
+        "webpack": "^4.41.1",
+        "webpack-cli": "^3.3.9"
     },
     "dependencies": {
         "@babel/runtime": "^7.6.3",
