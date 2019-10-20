@@ -4,7 +4,9 @@
     "description": "An appointment app",
     "main": "index.js",
     "scripts": {
-        "test": "jest --watch",
+        "test": "jest",
+        "test-watch": "jest --watch",
+        "start": "webpack-dev-server",
         "build": "webpack"
     },
     "repository": {
@@ -22,13 +24,21 @@
         "@babel/plugin-transform-runtime": "^7.6.2",
         "@babel/preset-env": "^7.6.3",
         "@babel/preset-react": "^7.6.3",
+        "@babel/runtime": "^7.6.3",
+        "@hot-loader/react-dom": "^16.10.2",
         "babel-loader": "^8.0.6",
+        "css-loader": "^3.2.0",
+        "faker": "^4.1.0",
+        "html-webpack-plugin": "^3.2.0",
         "jest": "^24.9.0",
+        "jest-transform-css": "^2.0.0",
+        "react-hot-loader": "^4.12.15",
+        "style-loader": "^1.0.0",
         "webpack": "^4.41.1",
-        "webpack-cli": "^3.3.9"
+        "webpack-cli": "^3.3.9",
+        "webpack-dev-server": "^3.8.2"
     },
     "dependencies": {
-        "@babel/runtime": "^7.6.3",
         "react": "^16.10.2",
         "react-dom": "^16.10.2"
     }
